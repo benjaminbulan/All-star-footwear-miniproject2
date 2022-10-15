@@ -1,0 +1,63 @@
+  
+    {
+        name: "Air Jordan 1 Mid GS Floral",
+        tag: "AirJordan1MidGSFloral",
+        price: 4560.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Adidas Samba Special Edition Spikeless Golf",
+        tag: "AdidasSambaSpecialEditionSpikelessGolf",
+        price: 5590.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike Air Force 1 High White Cinnabar",
+        tag: "NikeAirForce1HighWhiteCinnabar",
+        price: 7560.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike WMNS Air Force 1 Low Valentine",
+        tag: "NikeWMNSAirForce1LowValentine",
+        price: 9207.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Salomon XT-Wings 2 Turtle Dove",
+        tag: "SalomonXT-Wings2TurtleDove",
+        price: 9207.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Air Jordan 4 Sail Canvas",
+        tag: "AirJordan4SailCanvas",
+        price: 17757.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike Waffle One",
+        tag: "NikeWaffleOne",
+        price: 4995.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike Court Legacy Next Nature",
+        tag: "NikeCourtLegacyNextNature",
+        price: 3495.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike Daybreak",
+        tag: "NikeDaybreak",
+        price: 4995.00,
+        inCart: 0
+    }

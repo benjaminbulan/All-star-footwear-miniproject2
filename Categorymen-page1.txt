@@ -1,0 +1,67 @@
+
+        name: "Nike Air Presto-Tie-Dye",
+        tag: "NikeAirPrestoTieDye",
+        price: 7696.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike Air Force 1 Mid Certified Fresh",
+        tag: "NikeAirForce1MidCertifiedFresh",
+        price: 7696.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Disney x adidas Stan Smith - Cruella",
+        tag: "DisneyxadidasStanSmithCruella",
+        price: 7744.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Gucci x adidas Gazella",
+        tag: "GuccixadidasGazella",
+        price: 48458.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Air Jordan 37 - Beyond Borders",
+        tag: "AirJordan37Beyond Borders",
+        price: 10546.00,
+        inCart: 0
+    }, 
+
+
+    {
+        name: "Nike Dunk Low-Triple Pink",
+        tag: "NikeDunkLow-TriplePink",
+        price: 10546.00,
+        inCart: 0
+    }, 
+
+
+    {
+        name: 'Harden Stepback 3',
+        tag: 'HardenStepback3',
+        price: 3010.00,
+        inCart: 0
+    },
+
+    {
+        name: "Nike SB Zoom Blazer Low Pro GT Premium",
+        tag: "NikeSBZoomBlazerLowProGTPremium",
+        price: 3995.00,
+        inCart: 0
+    },
+
+    {
+        name: "Softride Enzo Nxt Men's Running Shoes",
+        tag: "SoftrideEnzoNxtMensRunningShoes",
+        price: 3981.00,
+        inCart: 0
+    }, 
+
+
+];

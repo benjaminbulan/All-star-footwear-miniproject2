@@ -1,0 +1,106 @@
+ name: 'Harden Stepback 3',
+        tag: 'HardenStepback3',
+        price: 3010.00,
+        InCart: 0
+    },
+    {
+        name: "Motorsport Wings 4.0",
+        tag: "MotorsportWings4.0",
+        price: 9000.00,
+        InCart: 0
+    },
+    {
+        name: "Nike SB Zoom Blazer Low Pro GT Premium",
+        tag: "NikeSBZoomBlazerLowProGTPremium",
+        price: 3995.00,
+        InCart: 0
+    },
+
+    {
+        name: "Softride Enzo Nxt Men's Running Shoes",
+        tag: "SoftrideEnzoNxtMensRunningShoes",
+        price: 3981.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Anzarun Lite Trainers",
+        tag: "AnzarunLiteTrainers",
+        price: 2600.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Caracal Trainers",
+        tag: "CaracalTrainers",
+        price: 3400.00,
+        InCart: 0
+    }, 
+
+    
+
+    {
+        name: "Anzarun Lite Trainers",
+        tag: "AnzarunLiteTrainers",
+        price: 2600.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Caracal Trainers",
+        tag: "Caracal Trainers",
+        price: 3400.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Air Jordan 1 Mid GS Floral",
+        tag: "AirJordan1MidGSFloral",
+        price: 4560.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Nike Air Force 1 High White Cinnabar",
+        tag: "NikeAirForce1HighWhiteCinnabar",
+        price: 7560.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Nike WMNS Air Force 1 Low Valentine",
+        tag: "NikeWMNSAirForce1LowValentine",
+        price: 9207.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Air Jordan 4 Sail Canvas",
+        tag: "AirJordan4SailCanvas",
+        price: 17757.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Nike Waffle One",
+        tag: "NikeWaffleOne",
+        price: 4995.00,
+        InCart: 0
+    }, 
+
+    {
+        name: "Nike Court Legacy Next Nature",
+        tag: "SoftrideEnzoNxtMensRunningShoes",
+        price: 3495.00,
+        inCart: 0
+    }, 
+
+    {
+        name: "Nike Daybreak",
+        tag: "NikeDaybreak",
+        price: 4995.00,
+        inCart: 0
+    }
+
+  
+   
