@@ -2,21 +2,8 @@
 
 let carts = document.querySelectorAll('.add-to-cart');
 
-
-
 let products = [
-    {
-        name: 'Harden Stepback 3',
-        tag: 'HardenStepback3',
-        price: 3010.00,
-        InCart: 0
-    },
-    {
-        name: "Motorsport Wings 4.0",
-        tag: "MotorsportWings4.0",
-        price: 9000.00,
-        InCart: 0
-    },
+
     {
         name: "Nike SB Zoom Blazer Low Pro GT Premium",
         tag: "NikeSBZoomBlazerLowProGTPremium",
@@ -45,19 +32,19 @@ let products = [
         InCart: 0
     }, 
 
+    
+
     {
-        name: "Nike Air Presto “Tie-Dye",
-        tag: "NikeAirPrestoTieDye",
-        price: 7696,
+        name: "Anzarun Lite Trainers",
+        tag: "AnzarunLiteTrainers",
+        price: 2600.00,
         InCart: 0
     }, 
 
-      
-
     {
-        name: "Nike Air Force 1 Mid Certified ",
-        tag: "NikeAirForce1MidCertified",
-        price: 7696,
+        name: "Caracal Trainers",
+        tag: "Caracal Trainers",
+        price: 3400.00,
         InCart: 0
     }, 
 
@@ -160,14 +147,11 @@ setItems(product);
 
 }
 
-
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
-    
-
-    if(cartItems != null ) {
+    if(cartItems != null) {
         if(cartItems[product.tag] == undefined) {
             cartItems = {
                 ...cartItems,
@@ -183,8 +167,6 @@ function setItems(product) {
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
-
-
 
 
 function totalCost(product) {
@@ -230,8 +212,7 @@ function displaycart() {
                        <button type="button" class="btn btn-danger">
                           <i class="fa-sharp fa-solid fa-xmark"></i>
                         </button>
-                <a href="#"><img src="./images/${item.tag}.jpg"></a>
-
+                    <img src="./images/${item.tag}.jpg">
                     <span>${item.name}</span>
 
                 </div> 
@@ -266,7 +247,6 @@ function displaycart() {
   
   </div><br>
 </div>    
-
 
   
       `; 
