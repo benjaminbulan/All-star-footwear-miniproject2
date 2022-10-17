@@ -304,7 +304,15 @@ function displaycart() {
             </div>
            <div class="col bg-white text-dark"></div>
            <div class="col bg-white text-dark"></div>
-           <div class="col bg-white text-dark"><button type="button" class="btn btn-dark">CHECKOUT</button></div>
+           <div class="col bg-white text-dark">
+          
+                    <a href="checkout.html">
+                        <button type="button" class="btn btn-dark">
+                     
+                        CHECKOUT
+                        </button>
+                    </a>
+                    
            
      `; 
 

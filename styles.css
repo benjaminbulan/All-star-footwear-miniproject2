@@ -167,6 +167,10 @@ a:link {
  
   
 /* Media Quires */
+
+
+}
+
 @media screen
 and ( max-width: 768px ) {
   /* Navigation Bar */
@@ -393,7 +397,7 @@ a:link {
 .logo{
   margin-top: -5%;
  
-  
+}
 /* Media Quires */
 @media screen
 and ( max-width: 768px ) {
@@ -439,12 +443,13 @@ and ( max-width: 768px ) {
      
   .hero h1{
     font-size: 40px;
+    
   } 
 
 
   .textp{
-    text-align: justify;
-    margin-left: 25%;
+    
+    margin-left: 30%;
     font-size: 18px;
   
   }

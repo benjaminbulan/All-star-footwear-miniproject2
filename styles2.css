@@ -3,6 +3,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-image: url('img/bg-login.jpg');
   background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
  
 }
 
