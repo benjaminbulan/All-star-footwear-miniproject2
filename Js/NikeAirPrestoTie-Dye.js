@@ -2,21 +2,23 @@
 
 let carts = document.querySelectorAll('.add-to-cart');
 
-
-
 let products = [
+
+  {
+        name: "Nike Air Presto “Tie-Dye",
+        tag: "NikeAirPrestoTieDye",
+        price: 7696,
+        InCart: 0
+    }, 
+
+
     {
         name: 'Harden Stepback 3',
         tag: 'HardenStepback3',
         price: 3010.00,
         InCart: 0
     },
-    {
-        name: "Motorsport Wings 4.0",
-        tag: "MotorsportWings4.0",
-        price: 9000.00,
-        InCart: 0
-    },
+  
     {
         name: "Nike SB Zoom Blazer Low Pro GT Premium",
         tag: "NikeSBZoomBlazerLowProGTPremium",
@@ -45,19 +47,19 @@ let products = [
         InCart: 0
     }, 
 
+    
+
     {
-        name: "Nike Air Presto “Tie-Dye",
-        tag: "NikeAirPrestoTieDye",
-        price: 7696,
+        name: "Anzarun Lite Trainers",
+        tag: "AnzarunLiteTrainers",
+        price: 2600.00,
         InCart: 0
     }, 
 
-      
-
     {
-        name: "Nike Air Force 1 Mid Certified ",
-        tag: "NikeAirForce1MidCertified",
-        price: 7696,
+        name: "Caracal Trainers",
+        tag: "Caracal Trainers",
+        price: 3400.00,
         InCart: 0
     }, 
 
@@ -160,14 +162,11 @@ setItems(product);
 
 }
 
-
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
-    
-
-    if(cartItems != null ) {
+    if(cartItems != null) {
         if(cartItems[product.tag] == undefined) {
             cartItems = {
                 ...cartItems,
@@ -183,8 +182,6 @@ function setItems(product) {
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
-
-
 
 
 function totalCost(product) {
@@ -222,19 +219,15 @@ function displaycart() {
       productContainer.innerHTML += ` 
     
 
-  <div class="container-product">
+ 
     <div class="container-fluid mt-3">
         <div class="row">
              <div class="col bg-white text-dark"> 
                   <div class="product">
-            
                        <button type="button" class="btn btn-danger">
                           <i class="fa-sharp fa-solid fa-xmark"></i>
                         </button>
-                 
-                <a href="#"><img src="./images/${item.tag}.jpg">
-                </a>
-
+                    <img src="./images/${item.tag}.jpg">
                     <span>${item.name}</span>
 
                 </div> 
@@ -258,8 +251,7 @@ function displaycart() {
          </button>
         </div>
      </div>   
-     </div>   
-
+        
       <div class="col bg-white text-dark">   
         <div class="total">
            ₱${item.inCart * item.price}.00
@@ -271,9 +263,7 @@ function displaycart() {
   </div><br>
 </div>    
 
-
-
-
+  
       `; 
 
      });  
@@ -289,28 +279,10 @@ function displaycart() {
            <h4 class=""basketTotal">
            ₱${cartCost}.00
            </h4>
-
-  </div>
-         
-
-
-           <div class="row">
-           <div class="col bg-white text-dark"> 
-            <a href="Category-Men.html">
-              <button type="button" class="btn btn-danger">
-              CONTINUE SHOPPING
-              </button>   
-            </a> 
-            </div>
-           <div class="col bg-white text-dark"></div>
-           <div class="col bg-white text-dark"></div>
-           <div class="col bg-white text-dark"><button type="button" class="btn btn-dark">CHECKOUT</button></div>
-           
      `; 
 
-
+   
  }
-
 
 
 

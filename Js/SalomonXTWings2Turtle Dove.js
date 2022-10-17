@@ -1,83 +1,12 @@
-
-
 let carts = document.querySelectorAll('.add-to-cart');
 
-
-
 let products = [
-    {
-        name: 'Harden Stepback 3',
-        tag: 'HardenStepback3',
-        price: 3010.00,
-        InCart: 0
-    },
-    {
-        name: "Motorsport Wings 4.0",
-        tag: "MotorsportWings4.0",
-        price: 9000.00,
-        InCart: 0
-    },
-    {
-        name: "Nike SB Zoom Blazer Low Pro GT Premium",
-        tag: "NikeSBZoomBlazerLowProGTPremium",
-        price: 3995.00,
-        InCart: 0
-    },
+    
+
 
     {
-        name: "Softride Enzo Nxt Men's Running Shoes",
-        tag: "SoftrideEnzoNxtMensRunningShoes",
-        price: 3981.00,
-        InCart: 0
-    }, 
-
-    {
-        name: "Anzarun Lite Trainers",
-        tag: "AnzarunLiteTrainers",
-        price: 2600.00,
-        InCart: 0
-    }, 
-
-    {
-        name: "Caracal Trainers",
-        tag: "CaracalTrainers",
-        price: 3400.00,
-        InCart: 0
-    }, 
-
-    {
-        name: "Nike Air Presto “Tie-Dye",
-        tag: "NikeAirPrestoTieDye",
-        price: 7696,
-        InCart: 0
-    }, 
-
-      
-
-    {
-        name: "Nike Air Force 1 Mid Certified ",
-        tag: "NikeAirForce1MidCertified",
-        price: 7696,
-        InCart: 0
-    }, 
-
-    {
-        name: "Air Jordan 1 Mid GS Floral",
-        tag: "AirJordan1MidGSFloral",
-        price: 4560.00,
-        InCart: 0
-    }, 
-
-    {
-        name: "Nike Air Force 1 High White Cinnabar",
-        tag: "NikeAirForce1HighWhiteCinnabar",
-        price: 7560.00,
-        InCart: 0
-    }, 
-
-    {
-        name: "Nike WMNS Air Force 1 Low Valentine",
-        tag: "NikeWMNSAirForce1LowValentine",
+        name: "Salomon XT-Wings 2 Turtle Dove",
+        tag: "SalomonXT-Wings2TurtleDove",
         price: 9207.00,
         inCart: 0
     }, 
@@ -86,19 +15,19 @@ let products = [
         name: "Air Jordan 4 Sail Canvas",
         tag: "AirJordan4SailCanvas",
         price: 17757.00,
-        InCart: 0
+        inCart: 0
     }, 
 
     {
         name: "Nike Waffle One",
         tag: "NikeWaffleOne",
         price: 4995.00,
-        InCart: 0
+        inCart: 0
     }, 
 
     {
         name: "Nike Court Legacy Next Nature",
-        tag: "SoftrideEnzoNxtMensRunningShoes",
+        tag: "NikeCourtLegacyNextNature",
         price: 3495.00,
         inCart: 0
     }, 
@@ -110,13 +39,9 @@ let products = [
         inCart: 0
     }
 
-  
-   
 
 
 ];
-
-
 for (let i=0; i < carts.length; i ++) {
     carts[i].addEventListener('click', () => {
       cartNumbers(products[i]);
@@ -160,14 +85,11 @@ setItems(product);
 
 }
 
-
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
-    
-
-    if(cartItems != null ) {
+    if(cartItems != null) {
         if(cartItems[product.tag] == undefined) {
             cartItems = {
                 ...cartItems,
@@ -183,8 +105,6 @@ function setItems(product) {
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
-
-
 
 
 function totalCost(product) {
@@ -222,19 +142,15 @@ function displaycart() {
       productContainer.innerHTML += ` 
     
 
-  <div class="container-product">
+ 
     <div class="container-fluid mt-3">
         <div class="row">
              <div class="col bg-white text-dark"> 
                   <div class="product">
-            
                        <button type="button" class="btn btn-danger">
                           <i class="fa-sharp fa-solid fa-xmark"></i>
                         </button>
-                 
-                <a href="#"><img src="./images/${item.tag}.jpg">
-                </a>
-
+                    <img src="./images/${item.tag}.jpg">
                     <span>${item.name}</span>
 
                 </div> 
@@ -248,18 +164,15 @@ function displaycart() {
      <div class="col bg-white text-dark">
         <div class="quantity">
         <button type="button" class="btn btn-dark"><ion-icon class="increase" name="add"></ion-icon></button>
+        </button>
 
-        
-            </button>
             <span>${item.inCart}</span>
-
-            <button type="button" class="btn btn-dark"><ion-icon class="decrease" name="remove"></ion-icon></button>
+            <button type="button" class="btn btn-success"><ion-icon class="decrease" name="remove"></ion-icon></button>
 
          </button>
         </div>
      </div>   
-     </div>   
-
+        
       <div class="col bg-white text-dark">   
         <div class="total">
            ₱${item.inCart * item.price}.00
@@ -271,9 +184,7 @@ function displaycart() {
   </div><br>
 </div>    
 
-
-
-
+  
       `; 
 
      });  
@@ -289,28 +200,10 @@ function displaycart() {
            <h4 class=""basketTotal">
            ₱${cartCost}.00
            </h4>
-
-  </div>
-         
-
-
-           <div class="row">
-           <div class="col bg-white text-dark"> 
-            <a href="Category-Men.html">
-              <button type="button" class="btn btn-danger">
-              CONTINUE SHOPPING
-              </button>   
-            </a> 
-            </div>
-           <div class="col bg-white text-dark"></div>
-           <div class="col bg-white text-dark"></div>
-           <div class="col bg-white text-dark"><button type="button" class="btn btn-dark">CHECKOUT</button></div>
-           
      `; 
 
-
+   
  }
-
 
 
 
