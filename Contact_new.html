@@ -22,6 +22,78 @@
   <!-- Master Styles -->
   <link rel="stylesheet" href="./styles.css">
 </head>
+<style>
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.contactus h1 {
+  text-align: center;
+}
+.contact-container {
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 01.5rem;
+  overflow: hidden;
+}
+.form-container {
+  padding: 20px;
+}
+.form-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  border-color: aqua;
+}
+.contact-form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact-form .send-button {
+  border: none;
+  outline: none;
+  background: #00dbe0;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+}
+.contact-form .send-button:hover {
+  background: hsl(181, 100%, 44%, 0.8);
+  transition: 0.3 all linear;
+}
+.map iframe {
+  width: 100%;
+  height: 50%;
+}
+.contact-section {
+  align-items: right;
+  text-align: right;
+}
+
+  </style>
 <body>
   
  
@@ -64,7 +136,7 @@
           <a href="About-new.html" class="nav-link">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a href="Contact_new.html" class="nav-link">CONTACT</a>
+          <a href="#features" class="nav-link">CONTACT</a>
         </li>
 
         <li class="nav-item">
@@ -101,64 +173,49 @@
                 <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
         
             </div></label>
-          </div></div>
+          </div></div><BR>
     
          
-
-          <div class="container text-center">
-            <h1>OUR MISSION</h1>
-            <p>
-              We help people achieve independence by making it easier to start, run,
-              and grow a business. We believe the future of commerce has more voices,
-              not fewer, so we’re reducing the barriers to business ownership to make
-              commerce better for everyone.
-            </p>
-          </div></br></br>
-          <div class="container-fluid row">
-            <div class="col">
-              <h2>Get support along the way</h2>
-              <p>
-                We know that selling online might be new to you which is why we have
-                the All Star Footwear Support team. Contact 24/7 All Star Footwear
-                Support via email, chat or phone, whenever you need help, whether you
-                have a specific question or are looking for general guidance.
-              </p>
-            </div>
-            <div class="col">
-              <h2>Mobile shopping cart</h2>
-              <p>
-                All Star Footwear detects when a customer goes to the checkout using a
-                mobile phone (iPhone, Android, Blackberry) and presents an optimized
-                mobile shopping cart checkout.
-              </p>
-            </div>
-            <div class="col">
-              <h1>No hidden fees</h1>
-              <p>
-                Unlike competing ecommerce solutions, All Star Footwear offers
-                unlimited bandwidth and zero set up fees on all our plans. You never
-                have to worry about surprise cancellation or excess bandwidth fees.
-              </p>
-            </div>
-          </div>
-          <div class="container-fluid row">
-              <div class="col">
-                  <h2>Design</h2>
-                  <p>Standards-compliant, fully customizable templates provided free to use with your account.</br>Complete control over your website's HTML and CSS.</br>Media assets linked to individual products or your shop as a whole.</p>
-              </div>
-              <div class="col">
-                  <h2>Accept credit cards and mobile pay</h2>
-                  <p>Customers can pay for items in their online shopping cart using Cash on Delivery, Credit/Debit Card in addition to mobile payment options like Gcash/Paypal.</p>
-              </div>
-              <div class="col">
-                  <h2>Accept orders for your products</h2>
-                  <p>It’s easy to view and accept credit card orders from your ecommerce website.</p>
-              </div>
-          </div>
+ <!--   Contact Container     -->
+ <div class="contact-container">
+  <!--   Form    -->
+  <div class="form-container">
+    <h3>Send us a Message</h3>
+    <form action="" class="contact-form">
+      <input type="text" placeholder="Full Name" required />
+      <input
+        type="email"
+        name=""
+        id=""
+        placeholder="Enter Your Email"
+        required
+      />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Your Message"
+        required
+      ></textarea>
+      <input type="submit" value="Submit" class="send-button" />
+    </form>
   </div>
+  <!--    Map    -->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61794.94486152361!2d120.97192384906093!3d14.531462337649115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c949f8efe26d%3A0x954cef4739256660!2sPasay%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1665997531903!5m2!1sen!2sph"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <div><i class="fa-solid fa-phone-flip"></i>(08)400 2000</div>
+  <div><i class="fa-solid fa-envelope"></i>email@address.com</div>
   </div>
 </div>
-
+</section>
+          
 
   </header> <!-- End of Home Section -->
 
